@@ -43,6 +43,9 @@ h3 {
     margin: 10px 20px;
     font-size: 30px;
 }
+canvas {
+    margin-bottom: 10px;
+}
 button {
     width: 100px;
     height: 30px;

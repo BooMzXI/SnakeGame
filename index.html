@@ -5,15 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/snakeIcon.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/009230d963.js" crossorigin="anonymous"></script>
     <title>Snake Game</title>
 </head>
 <body>
 
-    <div class="container">
-        <h1>SCORE : <span id="score">0</span></h1>
-        <h3>
-            Beware : If you press in the opposite direction to the current direction, you lose immediately.</h3>
-        <canvas id="canvas" width="400px" height="400px"></canvas>
+    <div class="warpper">
+        <div class="container">
+            <h1>SCORE : <span id="score">0</span> <i class="fa-solid fa-ghost"></i></h1>
+            <h3>Max score is : <span id="Max">0</span></h3>
+            <button id="87">W</button>
+            <div class="btn">
+                <button id="65">A</button>
+                <button id="83">D</button>
+                <button id="68">S</button>
+            </div>
+            <canvas id="canvas" width="400px" height="400px"></canvas>
+        </div>
     </div>
 
     <script src="script.js"></script>

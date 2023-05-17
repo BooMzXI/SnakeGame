@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    place-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    height: 100vh;
+    width: 100%;
+    background: url(img/Nature.jpg) center no-repeat;
+    background-size: cover;
+}
+.warpper {
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0 , 0 , 0.6);
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.container {
+    width: 550px;
+    height: 650px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #ff0055,
+    0 0 10px #ff0055,
+    0 0 15px #ff0055,
+    0 0 20px #ff0055;
+    margin: 0 auto;
+}
+h1 {
+    color: white;
+}
+h3 {
+    color: white;
+    margin: 10px 20px;
+    font-size: 30px;
+}
+canvas {
+    margin-bottom: 10px;
+}
+button {
+    width: 100px;
+    height: 30px;
+    background-color: aqua;
+    margin: 5px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #15EFEF,
+    0 0 7px #15EFEF,
+    0 0 9px #15EFEF,
+    0 0 11px #15EFEF;
+    font-size: 20px;
+}
+button:hover {
+    background: #C115EF;
+    box-shadow: 0 0 5px #C115EF,
+    0 0 7px #C115EF,
+    0 0 9px #C115EF,
+    0 0 11px #C115EF;
+    color: white;
+}
+.btn {
+    width: 500px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
+@media (max-width: 500px) {
+    body {
+        width: 100%;
+        overflow: hidden;
+    }
+    .warpper {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .container {
+        width: 350px;
+    }
+    canvas {
+        width: 300px;
+    }
+    .btn {
+        width: 400px;
+    }
+    button {
+        width: 70px;
+    }
+}

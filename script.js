@@ -100,7 +100,6 @@ window.onload = () => {
             for (let i = 0 ; i < snakeTail.length; i++){
                 if (appleX == snakeTail[i].x && snakeTail[i].y == appleY){
                     appleStack = true;
-                    break;
                 }
                 if (appleOnSnake) {
                     do {

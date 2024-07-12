@@ -1,7 +1,14 @@
 let canvas, context
+
+let max = 0;
+if(!localStorage.score)
+    localStorage.score = 0;
+else
+    max = localStorage.score;
+document.getElementById('Max').innerHTML = max;
+
 let scores = 0;
 const button = document.querySelectorAll('button');
-    
 
 window.onload = () => {
     canvas = document.getElementById('canvas');
@@ -63,7 +70,6 @@ let tailSize = 1;
 let snakeTail = [];
 let positionX = Math.floor(Math.random() * gridSize);
 let positionY = Math.floor(Math.random() * gridSize);
-let max = 0;
 
 let yellowX = yellowY = 18;
 let appleX = Math.floor(Math.random() * gridSize);
@@ -124,6 +130,7 @@ function draw() {
         if (snakeTail[i].x == positionX && snakeTail[i].y == positionY) {
             if (scores > max) {
                 max = scores;
+                localStorage.score = max
                 document.getElementById('Max').innerHTML = max;
             }
             tailSize = defTailSize;
